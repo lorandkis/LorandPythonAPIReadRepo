@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" type="text/css" href="../static/index.css"> 
+
+
+
+
+	</head>
+	
+	<body>
+        <center> <h2 style="color: rgb(141, 140, 104);">Read API From: https://api.coindesk.com/v1/bpi/currentprice.json</h2></center>
+        <form class="grid" action="/result" method="POST">
+
+          {% if name %}
+            <center>
+              <h3 style="color: rgb(49, 159, 233);" class="let_space">{{name}}</h3> <!--Hello {{name}}, How was your day?</h3>-->
+            </center> 
+            
+          {% else %}
+            <center><input class="file_submit" type="Submit" value="Read"></center>
+
+          {% endif %}
+           
+          <!-- <label for="name">Enter your name:</label> -->
+          <!--<input type="text" id="name" name="name">-->
+
+        </form>
+        <form class="grid" action="/home" method="POST">
+
+          <center><input class="file_submit" type="Submit" value="Clear" ></center>
+
+        </form>
+        
+
+        
+
+        
+
+        
+        <br>
+        <br>
+        <br>
+
+
+    </body>
+
+</html>
